@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cacique API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Cacique API</h1>
+    <p>A <b>Cacique API</b> é uma API desenvolvida pela Ethos com o conceito <i>Serverless</i>, executada na AWS através
+        de uma função Lambda, que é requisitada pelo ERP Bling via webhook.</p>
+    <p>Esta API foi desenvolvida para enviar uma mensagem via WhatsApp sempre que um pedido for enviado no ERP Bling.
+    </p>
+
+    <h2>O que é Serverless?</h2>
+    <p><i>Serverless</i> é um modelo de computação em nuvem onde o provedor de nuvem (AWS, Google Cloud, Azure, etc.) é
+        responsável por executar um pedaço de código ao responder a eventos. Isto significa que, em vez de manter um
+        servidor funcionando o tempo todo, o servidor é iniciado apenas quando necessário, trazendo vantagens como
+        economia de custos, escalabilidade automática e facilidade de implantação.</p>
+
+    <h2>O que é AWS?</h2>
+    <p>AWS (Amazon Web Services) é uma plataforma de serviços de nuvem que oferece poder computacional, armazenamento de
+        banco de dados, entrega de conteúdo e outras funcionalidades para ajudar as empresas a escalar e crescer.</p>
+
+    <h2>O que é Webhook?</h2>
+    <p>Webhooks são uma forma útil de apps se comunicarem entre si automaticamente. Eles permitem que você envie dados
+        de um aplicativo para outro sempre que um determinado evento ocorre. No caso da Cacique API, quando um evento
+        específico ocorre no ERP Bling, um webhook é disparado para a função Lambda na AWS.</p>
+
+    <h2>Sobre a API</h2>
+    <p>A Cacique API foi desenvolvida com TypeScript no Node.js versão 16. Ela envia uma solicitação POST para um
+        endpoint do Duotalk para que uma mensagem seja postada via WhatsApp, sempre que o status de pedido de um cliente
+        da Tribalismo for "enviado".</p>
+    <div style="display: inline_block" align="center">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+            alt="nodejs" width="40" height="40" />
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+            alt="typescript" width="40" height="40" />
+    </div>
+    <div align="center">
+        <img src="diagramaArquitetural.png" alt="cacique-api" width="30%">
+    </div>
+    <div style="display: inline_block" align="center">
+        <img src="ethos.jpg" width="3%">
+        <img src="LOGO TRIBALISMO - TIPO 2 BRANCA.png" width="10%">
+    </div>
+    <br>
+    <h2>Segurança</h2>
+    <p>A API utiliza padrões de segurança via token para garantir a segurança dos dados, seguindo os processos mais
+        avançados de engenharia de software desde a elicitação do requisito, design da solução,
+        implementação/codificação, testes e validação/verificação.</p>
+
+    <h2>CI/CD</h2>
+    <p>A API usa princípios de Integração Contínua / Entrega Contínua (CI/CD), permitindo que mudanças de código sejam
+        implementadas e testadas automaticamente, reduzindo o tempo de lançamento e aumentando a eficiência do
+        desenvolvimento.</p>
+
+    <h2>Escalabilidade</h2>
+    <p>O código foi projetado pensando na escalabilidade, facilitando a inclusão de novos endpoints e funcionalidades.
+    </p>
+    <p>Para novas funcionalidades,suporte ou integraçao do cacique com outros webservices a equipe ETHOS está plenamente
+        disponível.</p>
+    <h2>Report de Erros</h2>
+    <p>Se você encontrar qualquer problema ou erro enquanto estiver usando a Cacique API, por favor, não hesite em
+        entrar em contato conosco. Nossa equipe de suporte da Ethos está pronta para ajudá-lo a resolver quaisquer
+        questões que você possa ter. Estamos comprometidos em proporcionar uma experiência de alta qualidade para todos
+        os nossos usuários e valorizamos o seu feedback. Entre em contato com a equipe de suporte da Ethos através do
+        e-mail suporte@ethos.com. Nós estamos à disposição para auxiliá-lo!</p>
+    <h2>Desenvolvedores</h2>
+    <p>Esta API foi desenvolvida pelos engenheiros de software <b>Lucas Ramon Alves de Oliveira</b> e <b>Rafael de
+            Medeiros Nobre</b>.</p>
+</body>
+<footer>
+    <p>© 2023 - Ethos Soluções em Tecnologia</p>
+</footer>
+
+</html>
